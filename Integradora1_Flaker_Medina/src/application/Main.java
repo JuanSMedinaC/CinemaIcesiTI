@@ -66,11 +66,11 @@ public class Main extends Application {
 	public void showRegisterMovies() {
 		VBox root;
 		try {
-			FXMLLoader loader = new FXMLLoader(getClass().getResource("../ui/registerMovie.fxml"));
+			FXMLLoader loader = new FXMLLoader(getClass().getResource("../ui/registerMovies.fxml"));
 			root = (VBox)loader.load();
-			Scene scene = new Scene(root,500,500);
-			currentStage.setScene(scene);
 			
+			Scene scene = new Scene(root,800,500);
+			currentStage.setScene(scene);
 		}catch(IOException e) {
 			e.printStackTrace();
 		}
